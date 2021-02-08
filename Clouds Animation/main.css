@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.cloud {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+.c1 {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: movingClouds 20s infinite;
+  animation-delay: 2s;
+}
+.c2 {
+  animation-delay: 5s;
+}
+.c3 {
+  animation-delay: 10s;
+}
+.c4 {
+  animation-delay: 15s;
+}
+.c5 {
+  animation-delay: 20s;
+}
+@keyframes movingClouds {
+  0% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
