@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="main.css" />
+    <script>
+      var range = document.getElementById("range");
+      var output = document.getElementById("op");
+      output.innerHTML = range.value;
+      range.oninput = function () {
+        output.innerHTML = this.value;
+      };
+    </script>
+  </head>
+  <body>
+    <div class="main">
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        class="slider"
+        id="range"
+      />
+    </div>
+    <div id="op"></div>
+  </body>
+</html>
