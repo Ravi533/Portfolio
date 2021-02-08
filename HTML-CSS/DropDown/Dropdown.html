@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu with Nesting </title>
+    <link href="Dropdown.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href="#">Online Classes</a></li>
+                            <li class="hover-me"><a href="#">Lab facility</a>
+                                <div class="sub-nav-2">
+                                    <ul>
+                                        <li><a href="#">Glass Tubes</a>
+                                        <li><a href="#">Chemicals</a>
+                                        <li><a href="#">Testing</a>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li><a href="#">Classroom</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Training</a>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href="#">UI Development</a></li>
+                            <li><a href="#">Core Java</a></li>
+                            <li><a href="#">C Language</a></li>
+                            <li><a href="#">SQL </a></li>
+                        </ul>
+                </li>
+                <li><a href="#">Courses</a>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href="#">Mechanical</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Computer Science</a></li>
+                            <li><a href="#">Electrical</a></li>
+                        </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a>
+                    <div class="sub-nav">
+                        <dl>
+                            <dt>More</dt>
+                            <dd>Lorem ipsum dolor sit amet.</dd>
+                            <dt>Emergency Contact</dt>
+                            <dd>123456789,452165798,</dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <h2>Please Hover on li elemets which has Dropdown list below it</h2>
+        <h2>On Services we have li elemets with Nested Dropdown at Lab services</h2>
+        <h2>On About Us We have description list in Dropdown</h2>
+    </section>
+</body>
+
+</html>

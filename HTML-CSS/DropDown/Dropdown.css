@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(zz.jpg);
+    width: 100%;
+    height: max-content;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+.nav{
+    background-color: black;
+    text-align: center;
+}
+.nav ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.nav ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+.nav ul li a{
+    color: white;
+    font-size: 20px;
+}
+.nav ul li a:hover{
+    color: red;
+}
+.sub-nav{
+    display: none;
+}
+.nav ul li:hover .sub-nav{
+    display: block;
+    position: absolute;
+    background: black;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.nav ul li:hover .sub-nav ul{
+    display: block;
+    margin: 10px;
+}
+.nav ul li:hover .sub-nav ul li{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    border-bottom: 1px dotted #fff;
+}
+.nav ul li:hover .sub-nav ul li:last-child{
+    border-bottom: none;
+}
+.sub-nav-2{
+    display: none;
+    display: inline-block;
+}
+.hover-me:hover .sub-nav-2{
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 150px;
+    background: black;
+}
+.nav ul li:hover .sub-nav dl{
+    display: block;
+    margin: 10px;
+}
+.nav ul li:hover .sub-nav dl dd{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+section h2{
+    text-align: center;
+    color:yellow;
+    margin: 25px;
+    font-size: 35px;
+}
