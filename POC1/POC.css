@@ -1,0 +1,52 @@
+*{
+    margin: 0; 
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.top{
+    background-color:brown;
+    height: 40px;
+    width: 100%;
+}
+.top ul li:last-child{
+    float: right;
+}
+.top ul li{
+    display: inline-block;
+    margin: 0.5rem 2rem;
+}
+.top li a{
+    color: white;
+}
+#aa{
+    border-radius: 10px;
+    padding: 4px;
+}
+.middle h1{
+color: rgb(61, 61, 235);  
+margin: 40px 0 0 70px;
+}
+.middle h5{
+    color: brown;
+    font-style: italic;
+    margin-left: 140px;
+}
+.middle ul li{
+    display: inline-block;
+}
+.middle a{
+    color: black;
+    
+}
+.list{
+    display: inline-flex;
+    padding: 0 15px 0 0;
+}
+
+.middle{
+    border: 1px solid red;
+}
+
+
