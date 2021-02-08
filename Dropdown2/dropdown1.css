@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(zz.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    height: 100vh;
+}
+.nav{
+    background: rgba(12,45,20,0.7);
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    }
+
+.nav ul{
+    display: flex;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav ul li{
+    list-style: none;
+    justify-content: space-between;
+    margin-left: 100px;
+    font-size: 21px;
+}
+.nav ul li a{
+    color: yellow;
+    text-decoration: none;  
+    transition: all 0.2s ease-in;
+}
+
+.nav ul li a:hover{
+    color: whitesmoke;
+    font-size: 21px;  
+}
+
+.search{
+    width: 25%;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search label{
+    margin-right: 10px;
+    font-size: 21px;
+    color: yellow;
+}
+.search input{
+    height: 25px;
+    border-radius: 10px;
+}
+.dropdown1{
+    display: none;
+    z-index: 100;
+}
+.nav ul li:hover .dropdown1{
+    display: block;
+    position: absolute;
+}
+.dropdown1 ul{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width:182px;
+    margin-left: -20px;
+    margin-top: 32px;
+    background: rgba(12,45,20,0.7);
+}
+.dropdown1 ul li{
+    font-size: 21px;
+    margin-left: -25px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer; 
+}
+.dropdown1 ul li a:hover{
+    color: yellowgreen;
+}
+.dropdown2{
+    display: none;
+    position: absolute;
+}
+.dropdown1 ul li:hover .dropdown2{
+    display: inline-block;
+    position: absolute;
+    margin-top: -40px;
+    
+}
+.dropdown1 ul li:hover .dropdown2 ul{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 200px;
+    margin-left: 47px;
+}
+.nav ul li:hover .dropdown1 dl{
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+}
+.dropdown1 dl dt h2{
+    color:crimson;
+    margin: 10px;
+    font-size: 21px;
+}
+.dropdown3 img{
+    width:400px;
+    height: 300px;
+    margin-left: 185px;
+}
+
+.dropdown3{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+.nav ul li:hover .dropdown3{
+    display: inline-block;
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    margin-left: -400px;
+    z-index: 200;
+}
+.nav ul li:hover .dropdown3 dl{
+    position: relative;
+    margin-top: 70px;
+}
+.dropdown3 h2{
+    color: crimson;
+    text-align: center;
+    position: relative;
+}
