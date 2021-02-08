@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    color: mediumslateblue;
+}
+.icon-button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    color: #333333;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+.icon-no{
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.icon-button:hover{
+    cursor: pointer;
+}
+.icon-button:active{ 
+    background-color: #cccccc;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+  }
+  .dropdown-message {
+    display: none;
+    position: absolute;
+    background-color: #f8f8f8;
+    min-width: 200px;
+    z-index: 1;
+  }
+  P:hover{
+      color: hotpink;
+  }
+  .icon-button:hover .dropdown-message {
+    display: block;
+  }
+
